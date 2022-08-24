@@ -11,6 +11,7 @@
                         <table class="table table-striped table-bordered mt-4">
                             <thead class="thead-dark">
                                 <tr>
+                                    <th scope="col">ID</th>
                                     <th scope="col">TITLE</th>
                                     <th scope="col">CONTENT</th>
                                     <th scope="col">OPTIONS</th>
@@ -18,6 +19,7 @@
                             </thead>
                             <tbody>
                                 <tr v-for="(post, index) in posts" :key="index">
+                                    <td>{{post.id}}</td>
                                     <td>{{ post.title }}</td>
                                     <td>{{ post.content }}</td>
                                     <td class="text-center">
